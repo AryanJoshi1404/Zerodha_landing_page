@@ -4,6 +4,10 @@
 body{
     font-family: 'Inter',sans-serif;
     font-weight: 500;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    /* overflow-x: hidden; */
 }
 .text-center{
     text-align: center;
@@ -15,11 +19,8 @@ body{
 .text-right {
     text-align: right;
 }
-/* li{
-    list-style: none;
-} */
  .homepage{
-    width: 100%;
+    /* width: 100%; */
  }
 .navbar{
     position: fixed;
@@ -36,6 +37,7 @@ body{
     box-sizing: border-box;
     padding: 20px 200px 20px 200px;
     height: 70px;
+    perspective: 600;
 }
 .logo-img{
     justify-content: left;
@@ -104,7 +106,8 @@ body{
 .container2{
     display: flex;
     font-weight: bold;
-    width: 100%;
+    /* width: 100%; */
+    max-width: 100vw;
 }
 .Largest-Stock-Broker{
     padding-right: 150px;
@@ -157,23 +160,27 @@ body{
     padding: 0px 185px 120px;
 }
 .container3{
-    width: 100%;
+    width: 1100px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
 }
 .ecosystem-content{
     display: flex;
     padding: -20px 20px;
-    min-width: 100%;
+    /* min-width: 100%; */
 }
 .ecosystem-text {
     margin: -30px 75px 40px 0px;
     padding: 0px 20px 0px 20px;
     font-size: 32px;
-   min-width: 100%;
+   /* min-width: 100%; */
 }
 
 .ecosystem-text h2 {
     font-size: 32px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     line-height: 1.5;
     font-weight: 600;
 }
@@ -186,6 +193,7 @@ body{
     font-size: 16px;
     margin-top: -15px;
     margin-bottom: 32px;
+    margin-right: 15px;
     font-weight: 400;
     line-height: 1.75;
 
@@ -214,7 +222,7 @@ body{
 }
 .container4{
     margin: 0px 61.667px;
-    width: 100%;
+    max-width: 100vw;
 }
 .pricing-content{
     display: flex;
@@ -270,7 +278,7 @@ body{
 }
 .container5{
     display: flex;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .free-education-content {
@@ -320,7 +328,7 @@ body{
 }
 .container6{
     margin: 0px 181.333px;
-    width: 100%;
+    /* width: 100%; */
 }
 .container6 h2{
     margin: 0px 0px 20px;
@@ -339,7 +347,7 @@ body{
 .container7 {
     margin: 0px 81.667px;
     padding: 0px 110px;
-    width: 100%;
+    /* width: 100%; */
 }
 .three-col{
     display: flex;
@@ -503,32 +511,27 @@ body{
 }
 
 #footer {
-    width: 100%;
+    /* max-width: 100vw; */
     background: #FAFAFB;
     color: #666;
     padding: 30px 20px 5px;
     margin-top: 60px;
 }
+
 @media only screen and (max-width: 1100px) {
     .navbar {
         padding-left: 20px;
         padding-right: 20px;
     }
 }
-
-@media only screen and (max-width: 960px) {
-    .navbar {
-        height: 60px;
-    }
-}
-/* @media only screen and (max-width: 1420px) {
-    .homepage .marketing {
-        padding-top: 100px !important;
-    }
-} */
 @media only screen and (max-width: 1100px) {
     section {
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    footer .container {
+        padding: 0 20px;
     }
 }
